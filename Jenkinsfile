@@ -8,7 +8,9 @@ pipeline {
                 echo 'Cleaning workspace of previous build'
                 sh 'rm -rf insuranceTesting_Ubunto'
                 echo 'Cloning repository and building project'
-                sh 'git clone https://github.com/elibasson1/insuranceTesting_Ubunto.git'
+               // sh 'git clone https://github.com/elibasson1/insuranceTesting_Ubunto.git'
+                git branch: 'main', url: 'https://github.com/elibasson1/insuranceTesting_Ubunто.git'
+
 
                 dir('insuranceTesting_Ubunto') {
                     sh 'python3 -m venv venv'
