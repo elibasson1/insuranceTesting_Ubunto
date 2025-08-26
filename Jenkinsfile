@@ -10,7 +10,8 @@ pipeline {
                 echo 'Cloning repository and building project'
                // sh 'git clone https://github.com/elibasson1/insuranceTesting_Ubunto.git'
                 git branch: 'main', url: 'https://github.com/elibasson1/insuranceTesting_Ubunто.git'
-                gitTool : 'Git_Linux' // add new command ** -- **
+                // add gitTool line
+                gitTool: 'Git_Linux'
 
 
                 dir('insuranceTesting_Ubunto') {
