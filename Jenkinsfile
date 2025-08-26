@@ -10,12 +10,12 @@ pipeline {
                // echo 'Cloning repository and building project'
                // sh 'git clone https://github.com/elibasson1/insuranceTesting_Ubunto.git'
 
-
+                // Checkout דרך SCM על ה-agent
+                checkout scm
 
                 dir('insuranceTesting_Ubunto') {
                     sh 'python3 -m venv venv'
                     sh 'venv/bin/pip install -r requirements.txt'
-                 //   sh 'venv/bin/pip install allure-pytest'
                 }
             }
         }
