@@ -7,7 +7,7 @@ pipeline {
             steps {
                 echo 'Cleaning workspace of previous build'
                 sh 'rm -rf insuranceTesting_Ubunto'
-                echo 'Cloning repository and building project'
+               // echo 'Cloning repository and building project'
                // sh 'git clone https://github.com/elibasson1/insuranceTesting_Ubunto.git'
 
 
