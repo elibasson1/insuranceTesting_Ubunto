@@ -9,11 +9,7 @@ pipeline {
                 sh 'rm -rf insuranceTesting_Ubunto'
                 echo 'Cloning repository and building project'
                // sh 'git clone https://github.com/elibasson1/insuranceTesting_Ubunto.git'
-                git(
-                    branch: 'main',
-                    url: 'https://github.com/elibasson1/insuranceTesting_Ubunto.git',
-                     gitTool: 'Git_Linux'
-                )
+
 
 
                 dir('insuranceTesting_Ubunto') {
