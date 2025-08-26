@@ -2,6 +2,9 @@ pipeline {
     agent {
         label 'DemoNodeAgent'
     }
+    options {
+        skipDefaultCheckout(true) // מונע checkout אוטומטי על ה-controller
+    }
     stages {
         stage('Checkout & Build') {
             steps {
